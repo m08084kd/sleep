@@ -10,6 +10,8 @@
 
 サンプルの物語「**くまの ポポと おつきさまの ふね**」（約 6 分）が入っています。
 
+> Canva などで手作業で動画を作る場合は、**台本＋画像生成プロンプト集** [`canva/popo_moon_boat.md`](canva/popo_moon_boat.md) を使ってください。
+
 ![場面の例](docs/storyboard.png)
 
 ## つかいかた
