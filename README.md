@@ -12,6 +12,24 @@
 
 > Canva などで手作業で動画を作る場合は、**台本＋画像生成プロンプト集** [`canva/popo_moon_boat.md`](canva/popo_moon_boat.md) を使ってください。
 
+## 新しいおはなしの台本とスライド用プロンプトを作る（Claude Code スキル）
+
+このリポジトリを Claude Code で開いて、次のように頼むだけで作れます。
+
+```
+/bedtime-script うさぎが主人公の、星の電車にのるおはなし。6分くらい
+```
+
+（「新しいおはなしの動画を作りたい」と普通に頼んでも、自動でこのスキルが使われます）
+
+- 成果物は `canva/<slug>.md`（台本・キャラ設定・ポーズ集・場面ごとの英語／日本語プロンプト・Canva メモ）
+- ナレーションに擬音語・擬態語（オノマトペ）が入っていないか、こわい言葉がないかを自動チェックします
+- スキル本体：[`.claude/skills/bedtime-script/`](.claude/skills/bedtime-script/SKILL.md)
+
+| 作成済みのおはなし | ファイル |
+| --- | --- |
+| くまの ポポと おつきさまの ふね | [`canva/popo_moon_boat.md`](canva/popo_moon_boat.md) |
+
 ![場面の例](docs/storyboard.png)
 
 ## つかいかた
