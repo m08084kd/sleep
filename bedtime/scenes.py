@@ -55,7 +55,6 @@ def yawn(**_):
     body += g(k.lamp(True, "lg"), 360, 790, 0.9)
     body += '<ellipse cx="860" cy="930" rx="260" ry="40" fill="#b88d7a" opacity="0.6"/>'
     body += g(k.bear_sitting("closed", mouth="yawn"), 860, 800, 1.35)
-    body += _text(1110, 330, "ふわぁ〜", 72, color="#fffaf0", shadow="#8b6a7a")
     return k.svg_doc(body, defs)
 
 
