@@ -1,0 +1,170 @@
+# くまの ポポと おつきさまの ふね
+# 3〜6さいむけ ねむる まえの よみきかせ（約 7〜8 分）
+#
+# 書き方のメモ
+#  - text: 画面の字幕 & 読み上げる文章。ひらがな中心・分かち書き（空白）で書く。
+#  - say:  読み方をかえたいときだけ書く（例: 数字や、読みまちがえる言葉）。
+#  - pause: その文のあとの「間」（秒）。ねむくなる場面ほど長くする。
+#  - art:  絵の名前（bedtime/scenes.py の REGISTRY を参照）。
+#  - motion: 絵の動き in / out / left / right / still
+
+title: くまの ポポと おつきさまの ふね
+subtitle: ねむれる おはなし
+thumbnail_badge: ねむれる よみきかせ
+description: |
+  ねむたくなった くまの ポポのところに、おつきさまの ふねが むかえに きました。
+  ひつじの おか、ほしの いけ、ねむりの もりを ゆっくり めぐる、よるの おさんぽの おはなしです。
+
+subtitles: true
+
+voice:
+  backend: openjtalk      # openjtalk（オフライン）/ voicevox（おすすめ）/ edge
+  speed: 0.8              # 1.0 が ふつう。ゆっくりめに。
+  half_tone: -0.5         # すこし ひくめで おちついた声に
+  # --- VOICEVOX を使うとき ---
+  # backend: voicevox
+  # speaker: 8            # 8 = 春日部つむぎ など（VOICEVOX の話者 ID）
+  # speed: 0.85
+  # credit_name: 春日部つむぎ
+
+bgm:
+  enabled: true
+  bpm: 54
+  volume_db: -30          # 声のじゃまをしない、ちいさな音
+  noise_db: -46           # うすい「さーっ」という音（いらなければ null）
+
+timing:
+  line_pause: 1.8
+  scene_pause: 2.5
+  crossfade: 2.5
+  intro: 3.0
+  outro: 45               # おはなしのあと、星空と音楽だけの時間
+  fade_out: 15
+
+scenes:
+  - art: title
+    motion: in
+    lines:
+      - text: くまの ポポと、おつきさまの ふね。
+        subtitle: false     # タイトルは絵に書いてあるので字幕なし
+        pause: 3.0
+
+  - art: yawn
+    motion: in
+    lines:
+      - text: もりの おくの ちいさな おうちに、くまの ポポが すんでいました。
+      - text: おそらが、オレンジいろから、むらさきいろに かわるころ。
+      - text: ポポは、おおきな あくびを しました。
+      - text: ふわぁ〜あ。
+        say: ふわぁーーあ。
+        pause: 2.2
+      - text: きょうも いっぱい あそんだね。
+      - text: そろそろ、ねむる じかんです。
+        pause: 2.5
+
+  - art: moon_arrives
+    motion: right
+    lines:
+      - text: そのとき、まどの そとが、ぽわっと ひかりました。
+      - text: おつきさまが、ちいさな ふねに なって、おりてきたのです。
+      - text: 「ポポ、こんばんは。」
+      - text: 「ねむる まえに、いっしょに よるの おさんぽを しようよ。」
+      - text: ポポは、にっこり うなずいて、ふねに のりました。
+        pause: 2.5
+
+  - art: sailing
+    motion: in
+    lines:
+      - text: ふねは、ふわり、ふわり。
+      - text: くもの うみを、ゆっくり ゆっくり すすみます。
+      - text: ゆら、ゆら。
+        pause: 2.0
+      - text: ゆら、ゆら。
+        pause: 2.0
+      - text: からだの ちからを ぬいて、ふねに ゆられて みようね。
+        pause: 3.0
+
+  - art: sheep_hill
+    motion: left
+    lines:
+      - text: しばらく いくと、まっしろな ひつじの おかが みえてきました。
+      - text: ひつじさんたちが、ふかふかの くもの うえで、まるく なっています。
+      - text: いっしょに かぞえて みようか。
+      - text: ひつじさんが、ひとり。
+        pause: 2.2
+      - text: ひつじさんが、ふたり。
+        pause: 2.2
+      - text: ひつじさんが、さんにん。
+        pause: 2.4
+      - text: ひつじさんが、よにん。
+        pause: 2.6
+      - text: ひつじさんが、ごにん。
+        pause: 2.8
+      - text: みんな、すやすや、おやすみなさい。
+        pause: 3.0
+
+  - art: star_pond
+    motion: out
+    lines:
+      - text: つぎに ついたのは、ほしの いけ。
+      - text: みずの なかで、ちいさな ほしが、きらきら、ゆれています。
+      - text: おつきさまが、しずかに いいました。
+      - text: 「ポポ、ここで、ゆっくり いきを してみよう。」
+      - text: はなから、すーっと、すって。
+        pause: 2.5
+      - text: くちから、ふーっと、はいて。
+        pause: 3.0
+      - text: もういちど。すーっと、すって。
+        pause: 2.5
+      - text: ふーっと、はいて。
+        pause: 3.0
+      - text: からだが、ぽかぽか、あったかく なってきたね。
+        pause: 3.0
+
+  - art: sleepy_forest
+    motion: right
+    lines:
+      - text: ふねは、ねむりの もりの うえを とおります。
+      - text: もりの どうぶつたちも、もう、ねむっていました。
+      - text: うさぎさんも、まるく なって、おやすみ。
+        pause: 2.4
+      - text: りすさんも、ふわふわの しっぽに くるまって、おやすみ。
+        pause: 2.4
+      - text: ふくろうさんも、きょうは えだの うえで、おやすみ。
+        pause: 2.8
+      - text: もりは、しーんと しずかです。
+        pause: 3.0
+
+  - art: going_home
+    motion: left
+    lines:
+      - text: ポポの まぶたが、だんだん、おもたく なってきました。
+      - text: 「そろそろ、おうちに かえろうね。」
+      - text: おつきさまの ふねは、ほしの みちを とおって、
+        pause: 1.2
+      - text: ゆっくり、ゆっくり、ポポの おうちへ もどります。
+        pause: 3.0
+
+  - art: in_bed
+    motion: in
+    lines:
+      - text: ポポは、あたたかい おふとんに もぐりこみました。
+      - text: てのさきも、あしのさきも、ぽかぽか。
+        pause: 2.5
+      - text: おなかも、ぽかぽか。
+        pause: 2.5
+      - text: おつきさまが、まどから やさしく いいました。
+      - text: 「きょうも いちにち、よく がんばったね。」
+        pause: 2.4
+      - text: 「おやすみ、ポポ。」
+        pause: 3.5
+
+  - art: goodnight
+    motion: out
+    lines:
+      - text: そして、これを きいている、あなたも。
+        pause: 2.5
+      - text: きょうも いちにち、ありがとう。
+        pause: 3.0
+      - text: おやすみなさい。
+        pause: 4.0

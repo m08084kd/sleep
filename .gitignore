@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.pyc
+.venv/
+# scripts/setup_assets.sh でダウンロードするもの
+assets/fonts/*.ttf
+assets/voices/*.htsvoice
+assets/voices/COPYRIGHT.txt

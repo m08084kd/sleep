@@ -1,0 +1,6 @@
+numpy>=1.24
+pyyaml>=6.0
+cairosvg>=2.7
+imageio-ffmpeg>=0.5     # ffmpeg が PATH に無いときに使う
+pyopenjtalk-plus>=0.4   # オフラインの日本語音声合成
+edge-tts>=6.1           # （任意）Edge 読み上げを使うとき
